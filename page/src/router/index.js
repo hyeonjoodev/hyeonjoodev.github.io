@@ -9,7 +9,7 @@ const routes = [
   {
     path: '/user/:title',
     name: 'PostDetail',
-    component: () => import('/src/components/HelloWorld.vue')
+    component: () => import('/src/views/HelloWorld.vue')
   }
 ];
 

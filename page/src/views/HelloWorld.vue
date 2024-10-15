@@ -18,7 +18,7 @@ const title = route.params.title;
 
 const component = ref();
 
-import(`../../public/${title}.md`).then((module) => {
+import(`../post/${title}.md`).then((module) => {
   component.value = module.default;
 });
 </script>
