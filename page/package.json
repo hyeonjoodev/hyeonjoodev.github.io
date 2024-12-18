@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "vue": "^3.5.10",
     "vue-router": "^4.4.5"
   },
@@ -16,6 +17,7 @@
     "@vitejs/plugin-vue": "^4.6.2",
     "vite": "^4.5.5",
     "vite-plugin-md": "^0.22.5",
+    "vite-plugin-prerender": "^1.0.8",
     "vitepress": "^1.4.1"
   }
 }
