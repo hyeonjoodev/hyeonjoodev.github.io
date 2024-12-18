@@ -1,16 +1,16 @@
 <template>
-  <h1>{{ msg }}</h1>
-
-  <component :is="component" />
+  [
+  <RouterLink :to="{ name: 'PostList' }"> PostList</RouterLink>
+  ]
+  <h1>{{ title }}</h1>
+  <div class="box">
+    <component :is="component" />
+  </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
-
-const props = defineProps({
-  msg: String
-});
 
 const route = useRoute();
 
@@ -23,4 +23,8 @@ import(`../post/${title}.md`).then((module) => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.box {
+  border: 5px solid black;
+}
+</style>

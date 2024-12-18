@@ -3,13 +3,14 @@ import { createWebHistory, createRouter } from 'vue-router';
 const routes = [
   {
     path: '/',
-    name: 'Post List',
-    redirect: { name: 'PostDetail' }
+    name: 'PostList',
+    component: () => import('/src/views/PostList.vue')
+    // redirect: { name: 'PostDetail' }
   },
   {
-    path: '/user/:title',
+    path: '/page/:title',
     name: 'PostDetail',
-    component: () => import('/src/views/HelloWorld.vue')
+    component: () => import('/src/views/PostDetail.vue')
   }
 ];
 
