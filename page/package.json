@@ -1,23 +1,26 @@
 {
-  "name": "page",
+  "name": "github-page",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "node server",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.js --outDir dist/server",
+    "preview": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
-    "express": "^4.21.2",
-    "vue": "^3.5.10",
+    "compression": "^1.7.5",
+    "express": "^5.0.1",
+    "sirv": "^3.0.0",
+    "vue": "^3.5.13",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.6.2",
-    "vite": "^4.5.5",
-    "vite-plugin-md": "^0.22.5",
-    "vite-plugin-prerender": "^1.0.8",
-    "vitepress": "^1.4.1"
+    "@vitejs/plugin-vue": "^5.2.1",
+    "cross-env": "^7.0.3",
+    "vite": "^6.0.1",
+    "vite-plugin-markdown": "^2.2.0"
   }
 }

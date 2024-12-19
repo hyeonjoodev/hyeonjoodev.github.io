@@ -51,13 +51,17 @@ app.use('*all', async (req, res) => {
       render = (await import('./dist/server/entry-server.js')).render;
     }
 
-    const rendered = await render(url);
+    const { html } = await render(url);
 
-    const html = template
-      .replace(`<!--app-head-->`, rendered.head ?? '')
-      .replace(`<!--app-html-->`, rendered.html ?? '');
+    const [htmlStart, htmlEnd] = template.split('<!--app-html-->');
 
-    res.status(200).set({ 'Content-Type': 'text/html' }).send(html);
+    res.status(200).set({ 'Content-Type': 'text/html' });
+
+    res.write(htmlStart);
+
+    res.write(html); // 문자열을 바로 작성
+    res.write(htmlEnd);
+    res.end();
   } catch (e) {
     vite?.ssrFixStacktrace(e);
     console.log(e.stack);

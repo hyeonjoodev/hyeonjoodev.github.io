@@ -1,27 +1,25 @@
-import { createWebHistory, createRouter } from 'vue-router';
+import {
+  createWebHistory,
+  createMemoryHistory,
+  createRouter as _createRouter
+} from 'vue-router';
 
 const routes = [
   {
     path: '/',
     name: 'PostList',
-    component: () => import('/src/views/PostList.vue')
-    // redirect: { name: 'PostDetail' }
+    component: () => import('@/views/PostList.vue')
   },
   {
     path: '/page/:title',
     name: 'PostDetail',
-    component: () => import('/src/views/PostDetail.vue')
+    component: () => import('@/views/PostDetail.vue')
   }
 ];
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes
-});
-
-export default () => {
-  return createRouter({
-    history: createWebHistory(),
+export function createRouter() {
+  return _createRouter({
+    history: import.meta.env.SSR ? createMemoryHistory() : createWebHistory(),
     routes
   });
-};
+}

@@ -4,7 +4,7 @@
   ]
   <h1>{{ title }}</h1>
   <div class="box">
-    <component :is="component" />
+    <div v-html="html" />
   </div>
 </template>
 
@@ -16,10 +16,10 @@ const route = useRoute();
 
 const title = route.params.title;
 
-const component = ref();
+const html = ref();
 
 import(`../post/${title}.md`).then((module) => {
-  component.value = module.default;
+  html.value = module.html;
 });
 </script>
 
