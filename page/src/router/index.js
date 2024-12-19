@@ -21,7 +21,7 @@ export function createRouter() {
   return _createRouter({
     history: import.meta.env.SSR
       ? createMemoryHistory()
-      : createWebHistory(import.meta.env.BASE_URL),
+      : createWebHistory('/'),
     routes
   });
 }
