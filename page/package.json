@@ -7,7 +7,7 @@
     "dev": "node server",
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build --outDir ..",
-    "build:server": "vite build --ssr src/entry-server.js --outDir ../server",
+    "build:server": "vite build --ssr src/entry-server.js --outDir ..",
     "preview": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
