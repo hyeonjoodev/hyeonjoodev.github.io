@@ -5,7 +5,13 @@
   "type": "module",
   "homepage": "https://hyeonjoodev.github.io",
   "scripts": {
-    "deploy": "gh-pages -d public"
+    "dev": "vite",
+    "dev:node": "node server",
+    "deploy": "npm run build:client && cp dist/index.html dist/404.html && gh-pages -d dist",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --outDir ./dist",
+    "build:server": "vite build --ssr src/entry-server.js --outDir /dist/server",
+    "preview": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
     "compression": "^1.7.5",
@@ -19,6 +25,7 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "cross-env": "^7.0.3",
     "vite": "^6.0.1",
-    "vite-plugin-markdown": "^2.2.0"
+    "vite-plugin-markdown": "^2.2.0",
+    "vuepress": "^1.9.10"
   }
 }
