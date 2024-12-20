@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hyeonjoodev.github.io/",
+  "homepage": "https://hyeonjoodev.github.io",
   "scripts": {
     "deploy": "gh-pages -d public"
   },
