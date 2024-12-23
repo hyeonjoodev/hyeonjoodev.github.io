@@ -1,0 +1,1 @@
+{"file":"default-iXalNdrp.js","mappings":";;;;;;;;;;;;;;;AAAA,SAAA,eAAA,MAAA,OAAA,SAAA,QAAA;AAAA,QAAA,yBAAA;AAAAA,gBAAA,KAAA,QAAA,WAAA,CAAA,GAAA,MAAA,OAAA,OAAA;;;;;;;;;;","names":["_ssrRenderSlot"],"sources":["../../../../layouts/default.vue"],"sourcesContent":["<template>\n  <h1>Header</h1>\n  <slot />\n  <h1>Footer</h1>\n</template>\n"],"version":3}
