@@ -1,0 +1,1 @@
+import{_ as t,o as n,c as s,a as e,M as a,F as l}from"./Di4-qVVw.js";const f={};function u(o,r){return n(),s(l,null,[r[0]||(r[0]=e("h1",null,"error header",-1)),a(o.$slots,"default"),r[1]||(r[1]=e("h1",null,"error foorer",-1))],64)}const c=t(f,[["render",u]]);export{c as default};

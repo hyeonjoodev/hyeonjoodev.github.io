@@ -1,0 +1,1 @@
+import{_ as o,m as n,o as a,w as r,a as s,n as _}from"./Di4-qVVw.js";const c={};function u(x,t){const e=_;return a(),n(e,{name:"error-layout"},{default:r(()=>t[0]||(t[0]=[s("h1",null,"about/index",-1)])),_:1})}const f=o(c,[["render",u]]);export{f as default};
