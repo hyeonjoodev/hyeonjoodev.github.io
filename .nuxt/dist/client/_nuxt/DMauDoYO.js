@@ -1,0 +1,1 @@
+import{_ as o,o as n,c as s,a as r,M as a,F as l}from"./D9vScmfo.js";const d={};function f(t,e){return n(),s(l,null,[e[0]||(e[0]=r("h1",null,"Header",-1)),a(t.$slots,"default"),e[1]||(e[1]=r("h1",null,"Footer",-1))],64)}const c=o(d,[["render",f]]);export{c as default};

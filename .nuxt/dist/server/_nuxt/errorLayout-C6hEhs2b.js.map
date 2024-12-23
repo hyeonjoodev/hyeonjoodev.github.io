@@ -1,0 +1,1 @@
+{"version":3,"file":"errorLayout-C6hEhs2b.js","sources":["../../../../layouts/errorLayout.vue"],"sourcesContent":["<template>\n  <h1>error header</h1>\n  <slot />\n  <h1>error foorer</h1>\n</template>\n"],"names":["_ssrRenderSlot"],"mappings":";;;;;;;;;;;;;;;AAAA,SAAA,eAAA,MAAA,OAAA,SAAA,QAAA;AAAA,QAAA,+BAAA;AAAAA,gBAAA,KAAA,QAAA,WAAA,CAAA,GAAA,MAAA,OAAA,OAAA;;;;;;;;;;"}
