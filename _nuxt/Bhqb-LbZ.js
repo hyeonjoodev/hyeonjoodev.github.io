@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as n,a as e,a0 as s,F as l}from"./DRZl2mz6.js";const f={};function u(o,r){return a(),n(l,null,[r[0]||(r[0]=e("h1",null,"error header",-1)),s(o.$slots,"default"),r[1]||(r[1]=e("h1",null,"error foorer",-1))],64)}const c=t(f,[["render",u]]);export{c as default};
