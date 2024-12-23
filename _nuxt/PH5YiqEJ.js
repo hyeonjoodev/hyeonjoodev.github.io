@@ -1,0 +1,1 @@
+import{_ as n,t as o,v as s,x as t,K as l,J as a}from"./5vSwzDFL.js";const d={};function f(r,e){return o(),s(a,null,[e[0]||(e[0]=t("h1",null,"Header",-1)),l(r.$slots,"default"),e[1]||(e[1]=t("h1",null,"Footer",-1))],64)}const m=n(d,[["render",f]]);export{m as default};

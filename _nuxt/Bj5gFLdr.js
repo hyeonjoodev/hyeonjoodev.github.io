@@ -1,0 +1,1 @@
+import{_ as e,t,v as o,x as _,z as s,J as a}from"./5vSwzDFL.js";const l={};function d(c,n){return t(),o("h1",null,"main")}const f=e(l,[["render",d]]),m={};function u(c,n){const r=f;return t(),o(a,null,[n[0]||(n[0]=_("h1",null,"Hello World!",-1)),s(r)],64)}const x=e(m,[["render",u]]);export{x as default};
